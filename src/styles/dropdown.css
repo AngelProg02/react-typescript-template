@@ -1,16 +1,16 @@
+@import url('variables.css');
+
 .dropdown-item {
-  border: 1px solid black;
-  border-radius: 5px;
+  display: flex;
   text-align: center;
   justify-content: center;
-  padding: 2px;
-  background-color: linear-gradient(to bottom right, #3498db, #51a6e0);
+  padding: 5px;
   transition: background-color 0.2s;
 }
 
 .dropdown-item:hover {
-  background-color: #5bc0de;
-  color: white;
+  background-color: var(--hover-color);
+  color: var(--text-color-h);
 }
 
 .custom-button.disable-button-styles {
@@ -18,19 +18,8 @@
   color: inherit;
 }
 
-.dropdown {
-  border: 1px solid black;
-  border-radius: 5px;
-  text-align: center;
-  padding: 5px;
-  background-color: white;
-  margin-bottom: 5px;
-  transition: background-color 0.2s;
-}
-
-.dropdown:hover {
-  background-color: #5bc0de;
-  color: white;
+.custom-button:hover {
+  color: var(--text-color-h);
 }
 
 .disable-button-styles {
@@ -48,6 +37,8 @@ button {
 
 .dropdown-container {
   animation: slideDown 0.5s;
+  border-radius: 5px;
+  background-color: var(--navbar-color);
   transform-origin: top;
   position: absolute;
 }

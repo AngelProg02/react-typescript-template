@@ -1,4 +1,18 @@
-html {
+body {
   font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu,
     Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+}
+
+@media (min-width: 1250px) {
+  .separator {
+    padding: 10px;
+  }
+}
+
+.nav-foot-design {
+  border-radius: 20px;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
 }

@@ -1,3 +1,5 @@
+@import url('variables.css');
+
 @media (max-width: 1250px) {
   .container {
     align-items: center;
@@ -15,28 +17,28 @@
 
 .container {
   display: flex;
-  background: linear-gradient(to bottom right, #3498db, #51a6e0);
+  background-color: var(--navbar-color);
   box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
-  text-shadow: white;
   align-items: center;
-  font-size: small;
-  border-radius: 30px;
 }
 
 .container ul {
   flex-wrap: wrap;
-
   list-style: none;
 }
 
-.container button {
+.container li {
   cursor: pointer;
-  text-decoration: none;
-  color: black;
+  color: var(--text-color-1);
 }
 
-button:hover {
-  color: white;
+.container a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li:hover {
+  color: var(--text-color-h);
 }
 
 .container img {
