@@ -1,12 +1,26 @@
 @import url('variables.css');
 
 footer {
+  position: fixed;
   display: flex;
-  background-color: var(--navbar-color);
+  justify-content: space-between;
   align-items: center;
-  font-size: small;
-  border-radius: 20px;
+  justify-content: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--navbar-color);
   padding: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  gap: 10px;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 10px;
 }

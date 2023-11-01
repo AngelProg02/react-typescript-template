@@ -2,6 +2,7 @@ export const menuItems = [
   { label: 'Home', link: 'example.html' },
   { label: 'Booking', link: 'example.html' },
   { label: 'Contact', link: 'example.html' },
+
   { label: 'About us', link: 'example.html' },
 ];
 

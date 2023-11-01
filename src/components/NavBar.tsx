@@ -7,7 +7,7 @@ import { NavBarIcon } from './navBarIcon';
 
 export const Navbar: React.FC<NavbarProps> = ({ menuItems, loginRegisterItems, children }) => {
   return (
-    <nav className="container nav-foot-design">
+    <nav className="container rounded">
       <ul className="info">
         <NavBarIcon image="navicon.svg" />
         {children}
@@ -17,6 +17,7 @@ export const Navbar: React.FC<NavbarProps> = ({ menuItems, loginRegisterItems, c
           </li>
         ))}
       </ul>
+      <br></br>
 
       <ul className="login-register">
         {loginRegisterItems.map((item, index) => (
