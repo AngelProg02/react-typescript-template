@@ -1,9 +1,9 @@
 :root {
-  --navbar-color: #3498db;
+  --navbar-color: #ffb703;
   --text-color-1: black;
 }
 
 :root:hover {
   --text-color-h: white;
-  --hover-color: #59b3f8;
+  --hover-color: #ffcc4d;
 }

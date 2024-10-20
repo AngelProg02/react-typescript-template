@@ -1,9 +1,20 @@
 import '../styles/nav-bar.css';
 
-import { NavbarProps } from 'interfaces/interfaces';
 import React from 'react';
 
-import { NavBarIcon } from './navBarIcon';
+import { NavBarIcon } from './NavBarIcon';
+
+export interface MenuItem {
+  label: string;
+  link: string;
+  image?: string;
+}
+
+export interface NavbarProps {
+  menuItems: MenuItem[];
+  loginRegisterItems: MenuItem[];
+  children: React.ReactNode;
+}
 
 export const Navbar: React.FC<NavbarProps> = ({ menuItems, loginRegisterItems, children }) => {
   return (
@@ -21,10 +32,13 @@ export const Navbar: React.FC<NavbarProps> = ({ menuItems, loginRegisterItems, c
 
       <ul className="login-register">
         {loginRegisterItems.map((item, index) => (
-          <li key={index}>
+          <li className="inf-log-reg-direction" key={index}>
+            <img src={item.image} alt="login" />
             <a href={item.link}>{item.label}</a>
           </li>
         ))}
+
+        <NavBarIcon image="tools.svg" withText="Tools" />
       </ul>
     </nav>
   );

@@ -2,6 +2,8 @@
 
 @media (max-width: 1250px) {
   .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
@@ -12,7 +14,7 @@
   .info,
   .login-register {
     display: grid;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 
@@ -50,6 +52,7 @@ li:hover {
 .info,
 .login-register {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   gap: 30px;
@@ -68,4 +71,9 @@ li:hover {
 .options {
   background-color: transparent;
   border: 0;
+}
+
+.inf-log-reg-direction {
+  display: flex;
+  gap: 5px;
 }

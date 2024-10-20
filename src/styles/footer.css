@@ -2,25 +2,44 @@
 
 footer {
   position: fixed;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  justify-content: center;
   bottom: 0;
   left: 0;
   right: 0;
   background-color: var(--navbar-color);
-  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  z-index: 1;
 }
 
 .footer-container {
-  display: flex;
-  flex-direction: column;
   font-weight: 600;
   gap: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
 .footer-icons {
   display: flex;
+  justify-content: center;
   gap: 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+  footer {
+    position: relative;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--navbar-color);
+
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+  }
 }

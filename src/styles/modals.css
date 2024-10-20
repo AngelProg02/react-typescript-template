@@ -1,0 +1,44 @@
+.modal-container button {
+  display: flex;
+  background-color: var(--navbar-color);
+}
+
+.modal-container button {
+  border-radius: 10px;
+}
+
+.modal-dialog {
+  width: 500px;
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.modal-dialog button {
+  background-color: transparent;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.modal-dialog img {
+  border-radius: 10px;
+  width: auto;
+  height: auto;
+}
+
+.close-bt {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#poster {
+  transition: box-shadow 0.1s, transform 0.1s;
+}
+
+#poster:hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
